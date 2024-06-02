@@ -260,10 +260,9 @@
               </div>
               <div class="member-info text-center">
                 <h4>Dea Ayu Puspita Sari</h4>
-                <span>Psikolog Individu</span>
                 <p>
-                  Ahli dalam membantu individu mengatasi kecemasan, depresi, dan
-                  masalah pribadi.
+                  Membantu individu mengatasi kecemasan, depresi, dan masalah
+                  pribadi.
                 </p>
               </div>
             </div>
@@ -284,9 +283,8 @@
               </div>
               <div class="member-info text-center">
                 <h4>Elis Setyawati Rahmadani</h4>
-                <span>Psikolog Pasangan</span>
                 <p>
-                  Spesialis dalam memperkuat hubungan, mengatasi konflik, dan
+                  Membantu dalam memperkuat hubungan, mengatasi konflik, dan
                   meningkatkan komunikasi pasangan.
                 </p>
               </div>
@@ -308,9 +306,8 @@
               </div>
               <div class="member-info text-center">
                 <h4>Rhidatul Hidayah</h4>
-                <span>Psikolog Pelatihan</span>
                 <p>
-                  Terampil dalam pelatihan korporat untuk meningkatkan
+                  Membantu dalam pelatihan korporat untuk meningkatkan
                   produktivitas dan keterampilan tim.
                 </p>
               </div>
@@ -330,7 +327,6 @@
               </div>
               <div class="member-info text-center">
                 <h4>Ahmad Syukron</h4>
-                <span>Psikolog Talkshow</span>
                 <p>
                   Menyampaikan presentasi mengenai kesehatan mental dan
                   kesejahteraan untuk memberikan wawasan dan inspirasi kepada
@@ -371,8 +367,7 @@
                   <div class="info-item" data-aos="fade" data-aos-delay="300">
                     <i class="bi bi-telephone"></i>
                     <h3>No Telepon</h3>
-                    <p>+1 5589 55488 55</p>
-                    <p>+1 6678 254445 41</p>
+                    <p>+6287842727527</p>
                   </div>
                 </div>
                 <!-- End Info Item -->
@@ -511,9 +506,12 @@
         const name = e.target.name.value;
         const age = e.target.age.value;
         const gender = e.target.gender.value;
-        const text = `Halo kak, perkenalkan saya ${name}. Saya ${gender} berumur ${age}`;
-        const url = 'https://telegram.me/ruangcerita' + '?text=' + text;
-        console.log(url);
+        const text = `Halo kak, perkenalkan saya ${name}. Saya ${gender} berumur ${age}. Saya menghargai kesempatan ini untuk berbicara mengenai kesehatan mental saya`;
+        const searchParam = new URLSearchParams();
+
+        searchParam.append('text', text);
+        const url = 'https://telegram.me/ruangcerita?' + searchParam;
+        window.open(url, '_blank');
       });
     </script>
   </body>
